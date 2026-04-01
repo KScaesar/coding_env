@@ -9,6 +9,7 @@ $localip\
 $directory\
 [](fg:color_yellow bg:color_aqua)\
 $git_branch\
+$git_commit\
 $git_status\
 $git_state\
 [](fg:color_aqua bg:color_blue)\
@@ -102,6 +103,14 @@ truncation_symbol = "…/"
 symbol = ""
 style = "bg:color_aqua"
 format = "[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)"
+
+[git_commit]
+only_detached = true
+tag_disabled = false
+commit_hash_length = 6
+tag_symbol = "" 
+style = "bg:color_aqua"
+format = "[[($hash )](fg:color_fg0 bg:color_aqua)]($style)"
 
 [git_status]
 style = "bg:color_aqua"
