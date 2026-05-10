@@ -78,4 +78,8 @@ sudo apt update && sudo apt install -y deadbeef
 sudo apt update && sudo apt install -y wireshark
 sudo usermod -aG wireshark $(whoami)
 
-
+mise use -g npm:@openai/codex
+mise use -g @google/gemini-cli
+mise use -g npm:@rivolink/leaf
+mise use -g npm:agent-browse
+mise use -g npm:ctx7
